@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gizlilik Politikası — XTaksi</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --yellow: #F5C518;
+      --black: #0D0D0D;
+      --dark: #1A1A1A;
+      --gray: #6B6B6B;
+      --light-gray: #F2F2F2;
+      --white: #FFFFFF;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--white);
+      color: var(--black);
+      line-height: 1.7;
+    }
+
+    header {
+      background: var(--black);
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo-badge {
+      background: var(--yellow);
+      color: var(--black);
+      font-weight: 800;
+      font-size: 18px;
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo-text {
+      color: var(--white);
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.3px;
+    }
+
+    .logo-text span { color: var(--yellow); }
+
+    .hero {
+      background: var(--black);
+      color: var(--white);
+      padding: 48px 32px 40px;
+      border-bottom: 3px solid var(--yellow);
+    }
+
+    .hero h1 {
+      font-size: clamp(24px, 5vw, 38px);
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #999;
+      font-size: 14px;
+    }
+
+    .hero p strong { color: var(--yellow); }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 32px 80px;
+    }
+
+    .section {
+      margin-bottom: 48px;
+    }
+
+    .section-label {
+      display: inline-block;
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 4px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--black);
+    }
+
+    p {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    li {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 6px;
+    }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
+
+    .data-table th {
+      background: var(--black);
+      color: var(--white);
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .data-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #E8E8E8;
+      vertical-align: top;
+    }
+
+    .data-table tr:nth-child(even) td {
+      background: var(--light-gray);
+    }
+
+    .highlight-box {
+      background: var(--light-gray);
+      border-left: 4px solid var(--yellow);
+      padding: 16px 20px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 16px;
+    }
+
+    .highlight-box p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .contact-card {
+      background: var(--black);
+      color: var(--white);
+      padding: 28px 32px;
+      border-radius: 12px;
+      margin-top: 16px;
+    }
+
+    .contact-card h3 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--yellow);
+    }
+
+    .contact-card p {
+      color: #CCC;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    .contact-card a {
+      color: var(--yellow);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #E8E8E8;
+      margin: 40px 0;
+    }
+
+    footer {
+      background: var(--light-gray);
+      text-align: center;
+      padding: 24px 32px;
+      font-size: 13px;
+      color: var(--gray);
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 32px 20px 60px; }
+      header { padding: 16px 20px; }
+      .hero { padding: 36px 20px 32px; }
+      .data-table { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-badge">x</div>
+  <div class="logo-text"><span>x</span>taksi</div>
+</header>
+
+<div class="hero">
+  <h1>Gizlilik Politikası</h1>
+  <p>Son güncelleme: <strong>Haziran 2025</strong> &nbsp;·&nbsp; xtaksiresmi.com</p>
+</div>
+
+<div class="container">
+
+  <div class="section">
+    <span class="section-label">Genel</span>
+    <h2>Bu Politika Hakkında</h2>
+    <p>Bu gizlilik politikası, <strong>XTaksi</strong> mobil uygulamalarını (Yolcu, Sürücü ve Durak uygulamaları) kapsamaktadır. Uygulamalar, <strong>Xanthos Dijital</strong> tarafından geliştirilmiş olup Türkiye Şoförler ve Otomobilciler Federasyonu (TŞOF) iş ortaklığıyla sunulmaktadır.</p>
+    <p>XTaksi uygulamalarını kullanarak bu politikada açıklanan veri uygulamalarını kabul etmiş sayılırsınız. Politikamızı kabul etmiyorsanız lütfen uygulamayı kullanmayınız.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <span class="section-label">Toplanan Veriler</span>
+    <h2>Hangi Verileri Topluyoruz?</h2>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Veri Türü</th>
+          <th>Amaç</th>
+          <th>Kimden</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Konum (GPS)</strong></td>
+          <td>Yakındaki sürücü/yolcu eşleştirme, rota hesaplama</td>
+          <td>Yolcu, Sürücü</td>
+        </tr>
+        <tr>
+          <td><strong>Ad, Soyad</strong></td>
+          <td>Hesap oluşturma ve kimlik doğrulama</td>
+          <td>Yolcu, Sürücü</td>
+        </tr>
+        <tr>
+          <td><strong>Telefon numarası</strong></td>
+          <td>Hesap doğrulama ve iletişim</td>
+          <td>Yolcu, Sürücü</td>
+        </tr>
+        <tr>
+          <td><strong>Profil fotoğrafı</strong></td>
+          <td>Kullanıcı kimliği görüntüleme</td>
+          <td>Sürücü</td>
+        </tr>
+        <tr>
+          <td><strong>Araç bilgileri</strong></td>
+          <td>Sürücü kayıt ve onay süreci</td>
+          <td>Sürücü</td>
+        </tr>
+        <tr>
+          <td><strong>Yolculuk geçmişi</strong></td>
+          <td>Fatura, destek ve iyileştirme amaçlı</td>
+          <td>Yolcu, Sürücü</td>
+        </tr>
+        <tr>
+          <td><strong>Cihaz bilgileri</strong></td>
+          <td>Bildirim gönderimi ve teknik destek</td>
+          <td>Yolcu, Sürücü</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="highlight-box">
+      <p>📍 <strong>Arka planda konum:</strong> Sürücü uygulaması, aktif yolculuk sırasında arka planda konum verisi toplar. Bu veri yalnızca yolcunun sürücüyü takip etmesi için kullanılır ve üçüncü taraflarla paylaşılmaz.</p>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <span class="section-label">Kullanım</span>
+    <h2>Verilerinizi Nasıl Kullanıyoruz?</h2>
+    <ul>
+      <li>Yolcu-sürücü eşleştirme ve rota optimizasyonu</li>
+      <li>Yolculuk ücreti hesaplama ve kayıt tutma</li>
+      <li>Uygulama içi bildirimler ve anlık iletişim</li>
+      <li>Güvenlik ve doğrulama süreçleri</li>
+      <li>Müşteri desteği ve şikayet yönetimi</li>
+      <li>Uygulama performansını iyileştirme ve hata tespiti</li>
+    </ul>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <span class="section-label">Paylaşım</span>
+    <h2>Verilerinizi Kimlerle Paylaşıyoruz?</h2>
+    <p>Verileriniz hiçbir koşulda reklam amaçlı üçüncü taraflara satılmaz veya kiralanmaz. Yalnızca aşağıdaki durumlarda paylaşım yapılır:</p>
+    <ul>
+      <li><strong>Yolcu ↔ Sürücü:</strong> Aktif yolculuk sırasında ad, telefon ve konum bilgisi karşılıklı paylaşılır.</li>
+      <li><strong>TŞOF:</strong> Denetim ve lisans gereklilikleri kapsamında anonimleştirilmiş istatistikler paylaşılabilir.</li>
+      <li><strong>Teknik altyapı:</strong> Firebase (Google), Cloudinary — yalnızca hizmet sunumu amacıyla.</li>
+      <li><strong>Yasal zorunluluk:</strong> Yetkili makamların yasal talebi halinde.</li>
+    </ul>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <span class="section-label">Saklama & Güvenlik</span>
+    <h2>Verileriniz Ne Kadar Süre Saklanır?</h2>
+    <p>Hesabınız aktif olduğu sürece verileriniz sistemimizde tutulur. Hesabınızı silmeniz durumunda kişisel verileriniz 30 gün içinde kalıcı olarak silinir. Yolculuk kayıtları ise yasal zorunluluklar gereği 2 yıl süreyle saklanabilir.</p>
+    <p>Verileriniz, Firebase altyapısı üzerinde şifreli olarak depolanır ve yetkisiz erişime karşı endüstri standardı güvenlik önlemleriyle korunur.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <span class="section-label">Haklarınız</span>
+    <h2>Veri Haklarınız</h2>
+    <p>KVKK (Kişisel Verilerin Korunması Kanunu) kapsamında aşağıdaki haklara sahipsiniz:</p>
+    <ul>
+      <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+      <li>İşlenen verileriniz hakkında bilgi talep etme</li>
+      <li>Verilerin düzeltilmesini veya silinmesini isteme</li>
+      <li>Verilerin aktarıldığı üçüncü tarafları öğrenme</li>
+      <li>Otomatik sistemler aracılığıyla aleyhinize sonuç doğuran işlemlere itiraz etme</li>
+    </ul>
+    <div class="highlight-box">
+      <p>Hesabınızı ve tüm verilerinizi silmek için uygulama içindeki <strong>Hesap &gt; Hesabı Sil</strong> seçeneğini kullanabilir veya <a href="mailto:destek@xtaksiresmi.com">destek@xtaksiresmi.com</a> adresine e-posta gönderebilirsiniz.</p>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <span class="section-label">Çocuklar</span>
+    <h2>Çocukların Gizliliği</h2>
+    <p>XTaksi uygulamaları 18 yaşın altındaki bireylere yönelik değildir. 18 yaşından küçük kullanıcıların kişisel verilerini bilerek toplamıyoruz. Eğer böyle bir durumun farkında olursanız lütfen bizimle iletişime geçin.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <span class="section-label">Değişiklikler</span>
+    <h2>Politika Güncellemeleri</h2>
+    <p>Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişiklikler olması durumunda uygulama içi bildirim veya e-posta yoluyla bilgilendirme yapılır. Güncel politika her zaman <strong>xtaksiresmi.com/gizlilik</strong> adresinde yayımlanır.</p>
+  </div>
+
+  <hr class="divider" />
+
+  <div class="section">
+    <span class="section-label">İletişim</span>
+    <h2>Bize Ulaşın</h2>
+    <div class="contact-card">
+      <h3>Destek & Veri Talepleri</h3>
+      <p>E-posta: <a href="mailto:destek@xtaksiresmi.com">destek@xtaksiresmi.com</a></p>
+      <p>Web: <a href="https://xtaksiresmi.com">xtaksiresmi.com</a></p>
+      <p style="margin-top: 12px; font-size: 13px; color: #888;">Geliştirici: Xanthos Dijital &nbsp;·&nbsp; TŞOF iş ortaklığıyla sunulmaktadır.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  © 2025 XTaksi · Xanthos Dijital tarafından geliştirilmiştir · TŞOF iş ortağı
+</footer>
+
+</body>
+</html>
